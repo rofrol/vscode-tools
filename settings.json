@@ -3,8 +3,10 @@
   "terminal.integrated.profiles.linux": {
     "bash": {
       "path": "/bin/bash",
+      // You can use ${workspaceRoot}/.vscode/.bashrc_fnm instead
       "args": ["--init-file", "${env:HOME}/personal_projects/vscode-tools/.bashrc_fnm"]
     }
   },
+  // You can use ${workspaceRoot}/.vscode/shell_fnm.sh instead
   "terminal.integrated.automationShell.linux": "${env:HOME}/personal_projects/vscode-tools/shell_fnm.sh"
 }
