@@ -1,0 +1,49 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "shell",
+      "command": "gulp dev",
+      "label": "gulp dev",
+      "presentation": {
+        "group": "sxs", // some arbitrary name for the group
+        "panel": "dedicated",
+        "clear": true
+      }
+    },
+    {
+      "type": "shell",
+      "command": "yarn watch",
+      "label": "yarn watch",
+      "options": {
+        "cwd": "${workspaceFolder}/server"
+      },
+      "group": "build",
+      "problemMatcher": [],
+      "presentation": {
+        "group": "sxs2", // some arbitrary name for the group
+        "panel": "dedicated"
+      },
+      "runOptions": {
+        "runOn": "folderOpen"
+      }
+    },
+    {
+      "type": "shell",
+      "command": "yarn start",
+      "label": "yarn start",
+      "options": {
+        "cwd": "${workspaceFolder}/server"
+      },
+      "group": "build",
+      "problemMatcher": [],
+      "presentation": {
+        "group": "sxs2", // some arbitrary name for the group
+        "panel": "dedicated"
+      },
+      "runOptions": {
+        "runOn": "folderOpen"
+      }
+    }
+  ]
+}

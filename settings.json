@@ -1,0 +1,10 @@
+{
+  "terminal.integrated.defaultProfile.linux": "bash",
+  "terminal.integrated.profiles.linux": {
+    "bash": {
+      "path": "/bin/bash",
+      "args": ["--init-file", "${env:HOME}/personal_projects/vscode-tools/.bashrc_fnm"]
+    }
+  },
+  "terminal.integrated.automationShell.linux": "${env:HOME}/personal_projects/vscode-tools/shell_fnm.sh"
+}
